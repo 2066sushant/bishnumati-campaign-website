@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bishnumati Cleaning Campaign</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f8f9; /* Light, clean background */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #28a745; /* Green for nature/cleanliness */
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            font-size: 2.8em;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            margin-top: 5px;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #218838; /* Darker green for nav */
+            padding: 0.8em 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 5px 10px;
+            transition: background-color 0.3s ease, border-radius 0.3s ease;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            background-color: #1a6b2e; /* Even darker green on hover/active */
+            border-radius: 5px;
+        }
+
+        /* Main Content Sections */
+        .container {
+            max-width: 1000px;
+            margin: 25px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background-color: #ffffff;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        section h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: #28a745; /* Green heading */
+            font-size: 2em;
+            margin-top: 0;
+            border-bottom: 2px solid #28a745;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* About Section Specifics */
+        .about-text {
+            text-align: justify;
+        }
+
+        /* Image Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 200px; /* Fixed height for consistency */
+            object-fit: cover; /* Crop images to fit */
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.03); /* Slight zoom on hover */
+        }
+
+        /* Impact and Activities Section */
+        .impact-list {
+            list-style: disc inside;
+            padding-left: 20px;
+        }
+
+        .impact-list li {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        /* Call to Action Section */
+        .call-to-action {
+            text-align: center;
+            background-color: #e6f7ea; /* Lighter green background */
+            padding: 40px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        .call-to-action h2 {
+            color: #28a745;
+            margin-bottom: 20px;
+        }
+
+        .call-to-action .btn {
+            display: inline-block;
+            background-color: #007bff; /* Blue for action */
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 700;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .call-to-action .btn:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #343a40; /* Dark grey footer */
+            color: white;
+            text-align: center;
+            padding: 1.5em 0;
+            margin-top: 30px;
+            font-size: 0.9em;
+        }
+
+        footer .social-links a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5em;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer .social-links a:hover {
+            color: #28a745; /* Green on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bishnumati Cleaning Campaign</h1>
+        <p>A community effort for a cleaner, greener Bishnumati River in Nepal.</p>
+        <p>Clean and beautiful cities: A wish for all</p>
+        <p>Running since 2070 BS</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about" class="active">About Us</a></li>
+            <li><a href="#activities">Our Activities</a></li>
+            <li><a href="#impact">Impact & Gallery</a></li>
+            <li><a href="#join">Get Involved</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="about">
+            <h2>About the Campaign</h2>
+            <p class="about-text">
+                The Bishnumati Cleaning Campaign is a dedicated community initiative launched in **2071 BS (Bikram Sambat)**, focused on the revitalization and preservation of the Bishnumati River in Nepal. Our mission extends beyond merely cleaning the river; we strive to foster a sustainable environment by engaging local communities in various conservation efforts.
+            </p>
+            <p class="about-text">
+                The campaign was born out of a deep concern for the ecological degradation of the Bishnumati River, a vital waterway that flows through the heart of Kathmandu. Over the years, it has faced significant pollution challenges due to rapid urbanization and insufficient waste management. We believe that a clean river is not just an aesthetic improvement but a crucial step towards better public health and ecological balance.
+            </p>
+        </section>
+
+        <section id="activities">
+            <h2>Our Core Activities</h2>
+            <p>Our campaign employs a multifaceted approach to achieve its goals, focusing on hands-on cleaning, ecological restoration, and public education:</p>
+            <div class="impact-list">
+                <ul>
+                    <li>**River Cleaning Drives:** Regular clean-up operations along the Bishnumati riverbanks, removing solid waste, plastics, and debris.</li>
+                    <li>**Plantation Programs:** Planting trees and vegetation along the river to stabilize banks, improve air quality, and enhance biodiversity.</li>
+                    <li>**Community Awareness Programs:** Conducting workshops, seminars, and street plays to educate locals about the importance of river cleanliness, waste segregation, and responsible disposal.</li>
+                    <li>**Tree Conservation:** Promoting the protection and growth of existing trees and discouraging deforestation in the river's vicinity.</li>
+                    <li>**Public Health Advocacy:** Highlighting the link between a clean environment and public health, encouraging hygienic practices.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="impact">
+            <h2>Impact & Photo Gallery</h2>
+            <p>Since its inception in 2071 BS, the Bishnumati Cleaning Campaign has made significant strides in improving the river's condition and fostering environmental consciousness. Our efforts have led to:</p>
+            <div class="impact-list">
+                <ul>
+                    <li>Noticeable reduction in visible pollution along designated stretches.</li>
+                    <li>Increased green cover through successful tree plantation drives.</li>
+                    <li>Greater community participation and a growing sense of environmental responsibility.</li>
+                    <li>Improved awareness among younger generations about conservation.</li>
+                </ul>
+            </div>
+
+            <h3>Glimpses of Our Work:</h3>
+            <div class="gallery">
+                <img src="C:\Users\Asus\Documents\bishnumati\photo\cleaning river" alt="Volunteers cleaning the river">
+                <img src="C:\Users\Asus\Documents\bishnumati\photo\plantatiom" alt="People planting trees">
+                <img src="https://via.placeholder.com/300x200/b0e0b0/ffffff?text=Community+Meeting" alt="Awareness Program">
+                <img src="https://via.placeholder.com/300x200/d0e0d0/ffffff?text=Clean+River+View" alt="Cleaned section of the river">
+                </div>
+        </section>
+
+        <section id="join" class="call-to-action">
+            <h2>Join the Movement!</h2>
+            <p>Your support is vital for the continued success of the Bishnumati Cleaning Campaign. Whether through volunteering, donations, or simply spreading awareness, every effort counts.</p>
+            <p>Let's work together for a healthier environment and a vibrant Bishnumati River!</p>
+            <a href="mailto:info@bishnumaticampaign.org?subject=Inquiry about Bishnumati Cleaning Campaign" class="btn">Volunteer Now</a>
+            <a href="#" class="btn" style="background-color: #28a745; margin-left: 15px;">Donate</a>
+            </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Have questions, suggestions, or want to collaborate? We'd love to hear from you!</p>
+            <p><strong>Email:</strong> <a href="mailto:sh123obha@gmail.com">Sh123obha@gmail.com</a></p>
+            <p><strong>Phone:</strong> +977 9849000598 </p>
+            <p><strong>Address:</strong> Manamaiju, Ghale pul</p>
+            </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Bishnumati Cleaning Campaign. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/shobhakant.pandey.2025" target="_blank">Facebook</a> |
+            <a href="https://www.youtube.com/@bishnumaticleaningcampaign5198" target="_blank">Youtube</a> |
+            <a href="https://instagram.com/BishnumatiCampaign" target="_blank">Instagram</a>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+
+                // Remove active class from all links
+                document.querySelectorAll('nav ul li a').forEach(link => {
+                    link.classList.remove('active');
+                });
+                // Add active class to the clicked link
+                this.classList.add('active');
+            });
+        });
+
+        // Optional: Highlight nav link based on scroll position (more advanced)
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('nav ul li a');
+
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100; // Offset for header/padding
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
